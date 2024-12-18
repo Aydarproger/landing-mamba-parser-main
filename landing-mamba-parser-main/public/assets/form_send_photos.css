@@ -1,0 +1,417 @@
+.form_send_photos svg,
+.pop_up svg {
+    fill: #3b3b3b;
+    width: 25px;
+}
+
+.form_send_photos .btn,
+.pop_up .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #662e9b;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0.6rem 0.6rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+.form_send_photos .btn:hover,
+.pop_up .btn:hover {
+    background-color: #803ac2;
+}
+
+.error {
+    color: #FF0B0B;
+    font-weight: bold;
+}
+
+
+/* form_send_photos */
+
+.form_send_photos {
+    background: none;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.form_send_photos .title,
+.pop_up .title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.pop_up .title .subtitle {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.form_send_photos .examples,
+.pop_up .examples {
+    margin: 1.5em 0 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.form_send_photos .examples .item,
+.pop_up .examples .item {
+    width: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.form_send_photos .examples img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50% !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.form_send_photos .examples .caption svg,
+.pop_up .examples .caption svg {
+    position: relative;
+    fill: #D70081;
+    padding: .5em;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+.pop_up .text_left {
+    text-align: left;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+
+/* POP_UP */
+
+.pop_up {
+    position: fixed;
+    text-align: center;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.pop_up .window {
+    position: relative;
+    width: 65%;
+    margin: 2em auto;
+    padding: 1.25em 2em 1em;
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 4px 4px 20px -8px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 20px -8px rgba(0, 0, 0, 0.2);
+}
+
+.pop_up .close {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+}
+
+.pop_up .examples {
+    margin: 1em 0 0;
+}
+
+.pop_up .examples img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50% !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.pop_up .examples .caption {
+    width: 200px;
+}
+
+.pop_up form {
+    text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.pop_up form label {
+    width: 100%;
+}
+
+.pop_up .wrapper .btn {
+    background-color: #fff;
+    color: #000;
+    margin: .7em 0;
+    padding: .25em .6em;
+    width: 80%;
+    min-height: 48px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border: 2px #C3C2C8 solid;
+}
+
+.pop_up form #tg {
+    background-color: #fff;
+    color: #6c6c6c;
+    margin: 1em 0;
+    padding: .25em .6em;
+    width: 100%;
+    min-height: 48px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.pop_up form label input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.pop_up form .file {
+    display: none;
+}
+
+.pop_up form .delete_photo {
+    margin-top: .5em;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pop_up form .text {
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    margin-top: -4.5em;
+    padding: 0;
+}
+
+.pop_up form .text span {
+    display: block;
+    margin: 1em;
+}
+
+.pop_up form .continue,
+.pop_up form .btn_submit {
+    display: inline-block;
+    background-color: #E95A3A;
+    color: #fff;
+    width: 80%;
+    margin: 1em 0;
+    padding: .8em;
+    min-height: 48px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.pop_up form .wrapper_tg,
+.pop_up form .btn_submit {
+    display: none;
+}
+
+.pop_up form #tg::-webkit-input-placeholder {
+    opacity: .7;
+}
+
+.pop_up form #tg::-moz-placeholder {
+    opacity: .7;
+}
+
+.pop_up form #tg::-ms-input-placeholder {
+    opacity: .7;
+}
+
+.form_send_photos form #tg::-moz-placeholder {
+    opacity: .7;
+}
+
+
+/* alert after form */
+
+.alert_success {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 65%;
+    padding: 2em;
+    -webkit-box-shadow: 4px 4px 20px -8px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 20px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    top: -200%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 15;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    background-color: #198754;
+    border: 2px solid #D1E7DD;
+}
+
+.alert_success .icon {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1.5em;
+    border-radius: 100px;
+    background-color: #D1E7DD;
+    margin-right: 1em;
+}
+
+.alert_success svg {
+    width: 35px;
+    height: 35px;
+    fill: #198754;
+}
+
+.alert_success .text {
+    color: #fff;
+}
+
+.alert_success .close_alert {
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 1em;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 600px) {
+    .form_send_photos .btn,
+    .pop_up .btn {
+        font-size: 1rem;
+        white-space: normal;
+        padding: .8em 2em;
+    }
+    .form_send_photos {
+        width: auto;
+        padding: 4em .5em;
+    }
+    .form_send_photos .title,
+    .pop_up .title {
+        font-size: large;
+        font-weight: bold;
+    }
+    .form_send_photos .examples {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .form_send_photos .examples .item {
+        width: 38%;
+    }
+    .form_send_photos .examples img {
+        width: 100%;
+    }
+    .form_send_photos .examples .caption {
+        font-size: .8em;
+    }
+    .pop_up {
+        background-color: #E95A3A;
+    }
+    .pop_up .window {
+        width: auto;
+        min-height: 100%;
+        top: 0;
+        margin: .75em .5em;
+        padding: 3em 1.5em 1em;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .pop_up .examples {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 90%;
+        margin: 1.5em auto 1em;
+    }
+    .pop_up .examples .caption {
+        width: 150px;
+    }
+    .pop_up form .text span {
+        margin: .8em;
+    }
+    .pop_up form .btn_submit {
+        width: 100%;
+    }
+    .alert_success {
+        width: 95%;
+        padding: 1em .5em;
+    }
+    .alert_success .icon {
+        padding: 1em;
+    }
+    .alert_success svg {
+        width: 20px;
+        height: 20px;
+        fill: #198754;
+    }
+}
